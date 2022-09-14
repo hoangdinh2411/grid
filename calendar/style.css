@@ -1,0 +1,75 @@
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+article {
+  min-width: 550px;
+  margin: auto;
+  display: grid;
+  grid-template: 80px 40px auto / repeat(1, 1fr);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  color: #fff;
+  background-color: lightcoral;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header aside {
+  justify-self: center;
+  align-self: center;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 600;
+
+}
+
+.days aside {
+  justify-self: center;
+  align-self: center;
+}
+
+.dates {
+  display: grid;
+  grid-template: repeat(5, 60px) / repeat(7, 1fr);
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dates aside {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-current-month {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.weekend {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dates aside.today {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: lightcoral;
+  color: white;
+}
